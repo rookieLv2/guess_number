@@ -1,0 +1,79 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(7, 8, 37);
+    height: 90vh; /* vh vw ─讓你的圖片可以隨著螢幕大小而不同*/
+    overflow-y: hidden;
+}
+
+.box{
+    text-align: center; 
+    position: relative; /*相對位置*/
+    top: 25%; 
+}
+ /* 還未定義*/
+h1{
+    color: rgb(79, 192, 88);
+    margin-top: 5%;
+    text-align: center;
+    text-shadow: 1px 3px 2px rgb(15, 121, 33), 0 0 1em blue, 0 0 0.2em blue;
+}
+
+
+h3{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.password{
+    width: 40%;
+    text-align: left;
+    padding: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 5px;
+    background-color: rgba(70, 78, 40, 0.103);
+    border-radius: 15px ;
+    border: 0px solid #000;
+    font-size: 3rem;
+    font-family: Georgia, serif;
+    text-shadow: 1px 5px #557ebb79;
+    color: rgb(200, 245, 245);
+    letter-spacing: 1.5rem;
+    transition: box-shadow 750ms ease-in-out, color 500ms ease-in-out;
+    text-align: center;
+}
+
+.password:focus{
+    transition: box-shadow 2000ms ease-in-out, color 500ms ease-in-out;
+    outline: none;
+    box-shadow: 0px 0px 500px 500px rgba(214, 219, 136, 0.103);
+}
+.btn {
+    background-color: transparent;   /*透明度*/
+    border: 2px solid rgb(90, 28, 21);  
+    border-radius: 0.6em;  /*倒角*/
+    color: #b83526;
+    cursor: pointer; /*滑鼠變pointer*/
+    font-size: 1rem; /*rem是相對單位*/
+    margin: 30px;
+    padding: 1em 2rem ; /*長寬??*/
+    font-weight: 700; /*字體粗細 但好像不太明顯 不太會用*/
+  
+    transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out;  /*透明度的延遲*/
+    
+   
+  }
+
+ .btn:hover{
+   color: #fff; /*內文顏色*/
+   outline: 0;  /*似乎沒用*/
+   box-shadow: 0 0 40px 40px #e74c3c inset;  /*讓btn背改變*/
+}
+
+
+.btn:active {
+    transform: translate(10px, 5%); /*類震動效果*/
+  }
